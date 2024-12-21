@@ -1,4 +1,4 @@
-{% set version = "1.16.0.20240331" %}
+{% set version = "1.16.0.20241221" %}
 
 {% set python_min = python_min | default("3.9") %}
 
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  - url: https://pypi.org/packages/source/t/types-cffi/types-cffi-{{ version }}.tar.gz
-    sha256: b8b20d23a2b89cfed5f8c5bc53b0cb8677c3aac6d970dbc771e28b9c698f5dee
+  - url: https://pypi.org/packages/source/t/types-cffi/types_cffi-{{ version }}.tar.gz
+    sha256: 1c96649618f4b6145f58231acb976e0b448be6b847f7ab733dabe62dfbff6591
   - url: https://raw.githubusercontent.com/python/typeshed/main/LICENSE
     sha256: 295f8538c94ae5c3043301cf7cff1c852dab6a786a8ddee471e061b40d5ecabe
 
