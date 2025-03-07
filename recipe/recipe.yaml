@@ -30,18 +30,23 @@ requirements:
     - types-setuptools
 
 tests:
+  - files:
+      recipe:
+        - run_test.py
+    requirements:
+      run:
+        - pip
+        - python ${{ python_min }}.*
+    script:
+      - pip check
+      - python run_test.py
   - requirements:
       run:
         - cffi
         - mypy
         - pip
-        - python ${{ python_min }}.*
     script:
       - pip check
-      - |-
-        ls "$SP_DIR/cffi-stubs/__init__.pyi"          || dir "%SP_DIR%\cffi-stubs\__init__.pyi"
-      - |-
-        ls "$SP_DIR/_cffi_backend-stubs/__init__.pyi" || dir "%SP_DIR%\_cffi_backend-stubs\__init__.pyi"
       - mypy -p cffi -p _cffi_backend
 
 about:
