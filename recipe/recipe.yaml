@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.17.0.20250319"
+  version: "1.17.0.20250326"
 
 package:
   name: types-cffi
@@ -10,7 +10,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/t/types-cffi/types_cffi-${{ version }}.tar.gz
-    sha256: 66b0656818e5363f136a0a361f28e41330b55f83d390b14c6bf56026f57b3603
+    sha256: 6c8fea2c2f34b55e5fb77b1184c8ad849d57cf0ddccbc67a62121ac4b8b32254
   - url: https://raw.githubusercontent.com/python/typeshed/main/LICENSE
     sha256: 295f8538c94ae5c3043301cf7cff1c852dab6a786a8ddee471e061b40d5ecabe
 
