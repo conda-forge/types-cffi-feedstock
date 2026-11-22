@@ -33,7 +33,7 @@ tests:
       strict: true
       site_packages:
         - _cffi_backend-stubs/*.{pyi,toml,typed}
-        - cffi-stubs/*.pyi
+        - cffi-stubs/*.{pyi,toml,typed}
         - types_cffi-${{ version }}.dist-info/**
   - python:
       pip_check: true
