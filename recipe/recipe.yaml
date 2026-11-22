@@ -51,7 +51,7 @@ about:
   summary: Typing stubs for cffi
   license: Apache-2.0
   license_file: LICENSE
-  homepage: https://github.com/python/typeshed
+  homepage: https://pypi.org/project/types-cffi
   repository: https://github.com/python/typeshed/tree/main/stubs/cffi
 
 extra:
